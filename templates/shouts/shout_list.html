@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block notification %}
+{% if notice %}<p>{{ notice }}</p>{% endif %}
+{% endblock %}
+
+
+{% block middle %}
+	<ul>
+	{% for shout in shouts_list %}
+		<li>{{shout.post_as}} said : {{ shout.content }}</li>
+	{% endfor %}
+	</ul>
+{% endblock %}

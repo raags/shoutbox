@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>{% block title %}Shoutbox{% endblock %}</title>
+</head>
+
+<body>
+    <h1>Shoutbox</h1>
+	
+	<p>{% block notification %}{% endblock %} </p>
+
+	{% block content %}
+	<form action="/post/" method="post">
+	{% csrf_token %}
+	Shout here : <br /> 
+	<textarea name="shout" cols="40" rows="6" size="255"></textarea> <br />
+	<input type="submit" value="Post" /> as <input type="text" name="poster" value="Anonymous" /><br /> </p>
+	</form>
+	{% endblock %}
+
+    {% block middle %}{% endblock %}
+
+    {% block footer %}
+    <hr>
+    <p>Still lot to add : add pagination</p>
+    {% endblock %}
+
+</body>
+
+</html>
+
