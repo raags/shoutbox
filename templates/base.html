@@ -10,10 +10,10 @@
 	<p>{% block notification %}{% endblock %} </p>
 
 	{% block content %}
-	<form action="/post/" method="post">
+	<form action="/shoutbox/" method="post">
 	{% csrf_token %}
 	Shout here : <br /> 
-	<textarea name="shout" cols="40" rows="6" size="255"></textarea> <br />
+	<textarea name="shout" id="shout" cols="40" rows="6" size="255"></textarea> <br />
 	<input type="submit" value="Post" /> as <input type="text" name="poster" value="Anonymous" /><br /> </p>
 	</form>
 	{% endblock %}
