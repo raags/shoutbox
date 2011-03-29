@@ -1,5 +1,11 @@
-Shoutbox README
+README
 
-Plug-in the shoutbox class as required in a Django app
+The repo contains a standard Django application structure. Plug-in the shoutbox class as required in a Django app
 
-The repo contains a standard Django application structure
+mockup.ep : A Pencil(1) mockup of the shoutbox homepage
+
+
+
+
+
+1: http://code.google.com/p/evoluspencil/
