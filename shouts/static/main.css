@@ -1,0 +1,13 @@
+body {
+background-color: #2FB64D;
+color: #1C232F;
+}
+
+h1 {
+text-align: center;
+}
+
+.center {
+margin: auto;
+width: 20%;
+}

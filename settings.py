@@ -6,7 +6,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@domain.com'),
+     ('Raghu Udiyar', 'raghusiddarth@gmail.com'),
 )
 
 MANAGERS = ADMINS
@@ -69,6 +69,10 @@ TEMPLATE_LOADERS = (
 #     'django.template.loaders.eggs.Loader',
 )
 
+#STATIC_ROOT = '/home/rags/Projects/Django/shoutbox/static'
+
+STATIC_URL = '/static/'
+
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -95,5 +99,9 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+
+    # To serve static files
+    'django.contrib.staticfiles',
+    # Our app
     'shoutbox.shouts'
 )

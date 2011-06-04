@@ -6,9 +6,11 @@
 
 
 {% block middle %}
+	<div id="shouts" class="center">
 	<ul>
 	{% for shout in shouts_list %}
 		<li>{{shout.post_as}} said : {{ shout.content }}</li>
 	{% endfor %}
 	</ul>
+	</div>
 {% endblock %}

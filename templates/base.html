@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <title>{% block title %}Shoutbox{% endblock %}</title>
+
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}main.css" />
+
 </head>
 
 <body>
-    <h1>Shoutbox</h1>
+    <h1 class="center">Shoutbox</h1>
 	
 	<p>{% block notification %}{% endblock %} </p>
 
 	{% block content %}
-	<form action="/shoutbox/" method="post">
+	<form id="inputbox" class="center" action="/shoutbox/" method="post">
 	{% csrf_token %}
-	Shout here : <br /> 
 	<textarea name="shout" id="shout" cols="40" rows="6" size="255"></textarea> <br />
 	<input type="submit" value="Post" /> as <input type="text" name="poster" value="Anonymous" /><br /> </p>
 	</form>

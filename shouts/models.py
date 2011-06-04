@@ -1,7 +1,8 @@
 from django.db import models
 
 class Shout(models.Model):
-	"""Model to save out shouts"""
+	"""Model to save our shouts"""
+
 	post_as = models.CharField(max_length=30)  
 	content = models.TextField(max_length=255)
 	# automatically add timestamps when object is created
