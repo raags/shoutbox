@@ -6,11 +6,15 @@
 
 
 {% block middle %}
-	<div id="shouts" class="center">
-	<ul>
-	{% for shout in shouts_list %}
-		<li>{{shout.post_as}} said : {{ shout.content }}</li>
+	<br />
+	<ul id="shoutlist" class="center">
+	{% for shout in shouts_list reversed %}
+		<li class="listitem">
+			<b> {{shout.post_as}}</b> said :
+			<p> {{ shout.content }} </p>
+		</li>
+	{% empty %}
+		<p> No shouts available, yet </p>
 	{% endfor %}
 	</ul>
-	</div>
 {% endblock %}

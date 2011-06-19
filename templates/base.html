@@ -11,12 +11,13 @@
     <h1 class="center">Shoutbox</h1>
 	
 	<p>{% block notification %}{% endblock %} </p>
-
 	{% block content %}
 	<form id="inputbox" class="center" action="/shoutbox/" method="post">
 	{% csrf_token %}
 	<textarea name="shout" id="shout" cols="40" rows="6" size="255"></textarea> <br />
-	<input type="submit" value="Post" /> as <input type="text" name="poster" value="Anonymous" /><br /> </p>
+	<br />
+	<input id="postb" type="submit" value="Post" /> as 
+	<input id="postas" type="text" name="poster" value="Anonymous" /><br /> </p>
 	</form>
 	{% endblock %}
 

@@ -10,3 +10,6 @@ class Shout(models.Model):
 
 	def __unicode__(self):
 		return self.post_as
+	
+	class Meta:
+		ordering = ['pub_date']

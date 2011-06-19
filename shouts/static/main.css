@@ -1,5 +1,9 @@
+/* * {
+    border: 1px solid red !important;
+} */
+
 body {
-background-color: #2FB64D;
+background-color: #E1EDEA;
 color: #1C232F;
 }
 
@@ -10,4 +14,51 @@ text-align: center;
 .center {
 margin: auto;
 width: 20%;
+}
+
+#inputbox {
+ padding : 4px 8px;
+ width: 21%;
+
+}
+
+#postb {
+ padding: 4px 14px 4px 12px;
+
+}
+
+#postas {
+ padding : 4px 8px;
+ position: relative;
+ left: 10px;
+}
+
+
+#shoutlist {
+ width: 50%;
+/* padding-left: 0; */
+ list-style: none;
+}
+
+.listitem {
+ padding-left: 10px;
+ height: 60px;
+}
+
+.listitem b {
+
+}
+
+.listitem p {
+
+    -moz-border-radius: 10px 10px 10px 10px;
+    -moz-box-shadow: 4px 4px 4px #B3B3B3;
+    background: none repeat scroll 0 0 #4388CC;
+    border: 2px solid #0627CC;
+    bottom: 45px;
+    color: white;
+    left: 160px;
+    padding: 10px;
+    position: relative;
+    width: 42%;
 }
