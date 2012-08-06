@@ -1,11 +1,4 @@
-README
+I wrote this app to learn Django. 
+It's just a textbox where users can submit some text.
+The submitted text is then shown below.
 
-The repo contains a standard Django application structure. Plug-in the shoutbox class as required in a Django app
-
-mockup.ep : A Pencil(1) mockup of the shoutbox homepage
-
-
-
-
-
-1: http://code.google.com/p/evoluspencil/

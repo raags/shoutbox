@@ -12,7 +12,7 @@
 	
 	<p>{% block notification %}{% endblock %} </p>
 	{% block content %}
-	<form id="inputbox" class="center" action="/shoutbox/" method="post">
+	<form id="inputbox" class="center" action="" method="post">
 	{% csrf_token %}
 	<textarea name="shout" id="shout" cols="40" rows="6" size="255"></textarea> <br />
 	<br />
