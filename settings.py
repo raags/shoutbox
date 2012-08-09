@@ -66,12 +66,8 @@ SECRET_KEY = '%!b3=34c@#b7f41gq#7b7w*njurpa&05g92-)8!v-==f*w=nwf'
 TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
-#     'django.template.loaders.eggs.Loader',
+#   'django.template.loaders.eggs.Loader',
 )
-
-#STATIC_ROOT = '/home/rags/Projects/Django/shoutbox/static'
-
-STATIC_URL = '/static/'
 
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
@@ -88,6 +84,14 @@ PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 TEMPLATE_DIRS = (
 	os.path.join(PROJECT_ROOT, 'templates'),
 )
+
+
+STATICFILES_DIRS = (
+    ("admin", PROJECT_ROOT + "admin/static"),
+)
+
+STATIC_URL = '/static/'
+
 
 INSTALLED_APPS = (
     'django.contrib.auth',

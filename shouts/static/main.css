@@ -1,60 +1,77 @@
-/* * {
-    border: 1px solid red !important;
-} */
-
 body {
-background-color: #E1EDEA;
-color: #1C232F;
-}
-
-h1 {
-text-align: center;
+padding-top: 30px;
 }
 
 .center {
-margin: auto;
-width: 20%;
+margin-left: auto;
+margin-right: auto;
 }
 
-#inputbox {
- padding : 4px 8px;
- width: 18%;
-
+#inputbox .input-xlarge {
+width: 98%;
 }
 
-#postb {
- padding: 4px 14px 4px 12px;
+#post-area {
+}
 
+#post-area .btn {
+float: left;
+width: 15%;
+}
+
+#post-area label {
+float: left;
+width: 20em;
+text-align: center;
 }
 
 #postas {
- padding : 4px 8px;
- position: relative;
- left: 10px;
+height: 2.9em;
+float: right;
 }
 
-
-#shoutlist {
- width: 50%;
-/* padding-left: 0; */
- list-style: none;
+.shout-list {
+list-style: none outside none;
+margin: 80px 0 40px;
+clear: both;
 }
 
-.listitem {
- padding-left: 10px;
+.shout-item {
+margin-top: 20px;
+font-size: 16px;
 }
 
-.listitem b {
-
+.bubble:before {
+-moz-border-bottom-colors: none;
+-moz-border-image: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+border-color: transparent transparent #EEEEEE;
+border-style: solid;
+border-width: 15px;
+content: "";
+display: block;
+left: 30px;
+position: absolute;
+top: -30px;
+width: 0;
 }
 
-.listitem p {
-    -moz-border-radius: 10px 10px 10px 10px;
-    -moz-box-shadow: 4px 4px 4px #B3B3B3;
-    background: none repeat scroll 0 0 #4388CC;
-    border: 2px solid #0627CC;
-    color: white;
-    padding: 10px;
-    position: relative;
-/*  width: 42%; */
+.bubble {
+background: none repeat scroll 0 0 #EEEEEE;
+border-radius: 10px 10px 10px 10px;
+color: #333333;
+margin: 1.3em 0 0.5em;
+padding: 15px;
+position: relative;
+}
+
+#footer {
+border-top: 1px solid lightgray;
+padding: 20px;
+}
+
+#footer p {
+text-align: center;
 }

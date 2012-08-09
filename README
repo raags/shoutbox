@@ -1,4 +1,5 @@
-I wrote this app to learn Django. 
-It's just a textbox where users can submit some text.
-The submitted text is then shown below.
+I used this app as a learning ground for Django and Bootstrap. 
+The main page consists of a text box with user submitted text listed below.
+
+You can check the demo here : http://shoutbox-raags.rhcloud.com/
 

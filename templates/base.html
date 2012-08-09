@@ -4,31 +4,46 @@
     <title>{% block title %}Shoutbox{% endblock %}</title>
 
 <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}main.css" />
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bootstrap.min.css" />
 
 </head>
 
 <body>
-    <h1 class="center">Shoutbox</h1>
+    <div class="container-fluid">
+
+        <div class="row-fluid">
+            <div class="span4">
+            </div>
+            
+            <div class="span4 center">
+                <h1>Shoutbox</h1>
+                
+                <p>{% block notification %}{% endblock %} </p>
+	                
+	                {% block input %}
+	                <form id="inputbox" action="" method="post">
+	                    {% csrf_token %}
+	                    <textarea name="shout" class="input-xlarge" rows="3"></textarea>
+	                    <div id="post-area">
+	                        <input class="btn btn-large btn-success" type="submit" value="Post" />
+	                        <label>as</label>
+	                        <input id="postas" type="text" name="poster" placeholder="Anonymous" class="span3"/>
+	                    </div>
+	                </form>
+	                {% endblock %}
 	
-	<p>{% block notification %}{% endblock %} </p>
-	{% block content %}
-	<form id="inputbox" class="center" action="" method="post">
-	{% csrf_token %}
-	<textarea name="shout" id="shout" cols="40" rows="6" size="255"></textarea> <br />
-	<br />
-	<input id="postb" type="submit" value="Post" /> as 
-	<input id="postas" type="text" name="poster" value="Anonymous" /><br /> </p>
-	</form>
-	{% endblock %}
-
-    {% block middle %}{% endblock %}
-
-    {% block footer %}
-    <hr>
-    <p>Still lot to add : add pagination</p>
-    {% endblock %}
-
+                    {% block middle %}{% endblock %}
+            </div>
+        </div>
+        
+        <div class="row-fluid">
+            <div id="footer" class="span12">
+                {% block footer %}
+                <p>&copy; 2012 Raghu Udiyar</p>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
 
