@@ -9,7 +9,10 @@
 	<ol class="shout-list">
 	{% for shout in shouts_list %}
 		<li class="shout-item">
-			<strong> {{shout.post_as}} </strong> said :
+			<div class="bubble-top">
+				<strong> {{shout.post_as}} </strong> said :
+				<label>on {{ shout.pub_date }}</label>
+			</div>
 			<p class="bubble"> {{ shout.content }} </p>
 		</li>
 	{% empty %}
