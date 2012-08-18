@@ -9,6 +9,7 @@ margin-right: auto;
 
 #inputbox .input-xlarge {
 width: 98%;
+resize: none;
 }
 
 #post-area {
@@ -16,13 +17,12 @@ width: 98%;
 
 #post-area .btn {
 float: left;
-width: 15%;
 }
 
 #post-area label {
 float: left;
-width: 20em;
 text-align: center;
+width: 50%;
 }
 
 #postas {
